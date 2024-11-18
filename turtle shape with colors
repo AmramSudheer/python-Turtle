@@ -1,0 +1,14 @@
+import turtle as t
+import random
+
+colors = ['pink','red','dark turquoise','dark red','indigo','dark slate blue','blue']
+tim = t.Turtle()
+def shape(num_sides):
+     angle = 360/num_sides
+     for i  in range(num_sides):
+           
+           tim.forward(100)
+           tim.right(angle)
+for shape_size in range(2,9):
+      tim.color(random.choice(colors))
+      shape(shape_size)
